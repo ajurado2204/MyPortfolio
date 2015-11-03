@@ -1,16 +1,8 @@
 h1{
 	color: black;
-	font-family: Lucida Console;
-	background-color: white;
-	margin: -10px;
-	padding: 10px;
+	font-family: 'Courgette', cursive;
 }
 
-body{
-	background-image: url("http://web-design.gymnasium-lom.com/works/04/ra/background5ui.jpg");
-	background-size: 100% 150%;
-}
-
-#ale{
-	color: red;
+h2{
+	font-family: 'Courgette', cursive;
 }
