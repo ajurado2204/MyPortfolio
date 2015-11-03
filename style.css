@@ -19,14 +19,31 @@ div p{
 	padding: 0px 20px 0px 20px;
 }
 
-a: link{
+a:link{
 	color: blue;
 }
 
-a: hover{
+a:visited {
+    color: black;
+}
+
+a:hover{
 	color: red;
 }
 
-a: active{
-	color: black;
+a:active{
+	color: purple;
 }
+
+div a{
+	float: left;
+}
+
+form{
+	float: right;
+}
+
+
+
+
+
