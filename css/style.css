@@ -3,7 +3,7 @@ body{
 }
 
 #header{
-	background-image: url("abstractmacro.jpg");
+	background-image: url("../images/abstractmacro.jpg");
 	width: 1400px;
 	height: 500px;
 	margin: -50px -5px 12px -10px;
