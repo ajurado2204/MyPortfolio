@@ -3,7 +3,7 @@ body{
 }
 
 #header{
-	background-image: url("images/abstractmacro.jpg");
+	background-image: url("abstractmacro.jpg");
 	width: 1400px;
 	height: 500px;
 	margin: -50px -5px 12px -10px;
@@ -67,11 +67,8 @@ a:visited {
 
 a:hover{
 	color: black;
-<<<<<<< HEAD
 	background-color: #85ADAD;
-=======
 	text-decoration: underline;
->>>>>>> d40ba0b5bf8e9777775ce79acba6a13b452416a5
 }
 
 a:active{
