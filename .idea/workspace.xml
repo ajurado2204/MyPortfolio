@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6737105f-ce63-4f90-ba4f-acc4547326ae" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/abstractmacro.jpg" afterPath="$PROJECT_DIR$/images/abstractmacro.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webicon-github.png" afterPath="$PROJECT_DIR$/images/webicon-github.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webicon-linkedin.png" afterPath="$PROJECT_DIR$/images/webicon-linkedin.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contactme.html" afterPath="$PROJECT_DIR$/contactme.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
-    </list>
+    <list default="true" id="6737105f-ce63-4f90-ba4f-acc4547326ae" name="Default" comment="" />
     <ignored path="MyPortfolio.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
