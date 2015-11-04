@@ -67,7 +67,11 @@ a:visited {
 
 a:hover{
 	color: black;
+<<<<<<< HEAD
 	background-color: #85ADAD;
+=======
+	text-decoration: underline;
+>>>>>>> d40ba0b5bf8e9777775ce79acba6a13b452416a5
 }
 
 a:active{
