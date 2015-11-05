@@ -1,0 +1,40 @@
+body{
+	background-image: url("../images/blogpic.jpg");
+}
+
+#innercontainer{
+	background-color: #F8F8F8;	
+	margin-top: -40px;
+	margin-right: 160px;
+	margin-bottom: -50px;
+	margin-left: 160px;
+	padding-bottom: 500px;
+}
+
+#container {
+	border-bottom: 1px solid black;
+}
+
+#container h1{
+	padding: 60px 20px 60px 20px;
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-size:45px;
+}
+
+div a{
+	padding-left: 121px;
+	margin-top: -42px !important;
+	margin-right: 5px;
+}
+
+#thetabs{
+	margin-left: 7px;
+	font-family: 'Chewy', cursive;
+	margin-top: -1px;
+}
+
+article{
+	font-family: 'Chewy', cursive;
+	padding: 30px 40px 40px 40px;
+}
