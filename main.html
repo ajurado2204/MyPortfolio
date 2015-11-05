@@ -2,20 +2,25 @@
 <html>
 <head>
 	<title>My Page</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div id="header">
+	<div class="jumbotron">
 		<h1>Hi, I'm Alejandra Jurado</h1>
 		<h2>Welcome to my portfolio!</h2>
 	</div>
 
-	<a href="#" id="aboutmetab">About Me</a>
-	<a href="careerobjectives.html" id="career">Career Objectives</a>
-	<a href="myprojects.html" id="projects">Projects</a>
-	<a href="myblog.html" id="blogtab">Blog</a>
-	
+
+	<ul class="nav nav-tabs">
+  		<li class="active"><a href="main.html">About Me</a></li>
+  		<li><a href="myprojects.html">Projects</a></li>
+  		<li><a href="myblog.html">Blog</a></li>
+	</ul>
 
 
 	<h3>About Me!</h3>
@@ -33,6 +38,7 @@
 		</p>
 	</div>
 
+	<br>
 	<h4>Technologies</h4>
 	<div>
 		<p>
@@ -41,6 +47,7 @@
 		</p>
 	</div>
 
+	<br>
 	<h4>Contact Information</h4>
 	<ul>
 		<li><a href="contactme.html">Shoot me a message!</a></li>
