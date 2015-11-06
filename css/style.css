@@ -1,41 +1,47 @@
-.jumbotron{
-	background-image: url("../images/abstractmacro.jpg");
-	width: auto;
-	height: 500px;
-}
-
-
-.jumbotron h1{
-	color: white;
-	font-family: 'Courgette', cursive;
-	text-align: center;
-	padding-top: 90px;
-	font-weight: bold;
-	font-size: 70px
-}
-
-.jumbotron h2{
-	color: white;
-	font-family: 'Courgette', cursive;
-	text-align: center;
-	font-weight: bold;
-	font-size: 50px
-}
-
 body{
 	background-color: #F8F8F8;
 }
 
-.nav-tabs{
-	margin: -20px 0px 0px 0px;
+.jumbotron{
+	background-image: url("../images/abstractmacro.jpg");
+	width: auto;
+	height: 300px;
+	border-bottom: 1px solid black;
 }
 
-h3{
-	padding-left: 20px;
+.jumbotron h1{
+	color: black;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+	padding-top: 30px;
+	font-weight: bold;
+	font-size: 50px
 }
 
-p{ 
-	padding: 0px 40px 0px 40px;
+.jumbotron h2{
+	color: black;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px
+}
+
+.container-fluid{
+	background-color: #2B8190;
+}
+
+.navbar-brand{
+	color: black !important;
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.nav.navbar-nav li a {
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 a:link{
@@ -46,18 +52,25 @@ a:visited {
     color: red;
 }
 
-a:hover{
-	color: black;
+.nav.navbar-nav li a:hover{
+	background-color: #4db6c6;
 }
 
-a:active{
-	color: purple;
+.nav.navbar-nav.active a{
+	background-color: #4797a3;
 
 }
 
-h4{
+.headeralignment{
 	padding-left: 20px;
 }
+
+p{ 
+	padding: 0px 40px 0px 40px;
+	text-align: justify;
+}
+
+
 
 
 div a{
