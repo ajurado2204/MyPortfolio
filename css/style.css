@@ -38,10 +38,10 @@ body{
 }
 
 .nav.navbar-nav li a {
-    color: black;
-    font-family: 'Indie Flower', cursive;
-    font-size: 17px;
-    font-weight: bold;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 a:link{
@@ -49,7 +49,7 @@ a:link{
 }
 
 a:visited {
-    color: red;
+   color: red;
 }
 
 .nav.navbar-nav li a:hover{
