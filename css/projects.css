@@ -1,0 +1,20 @@
+body{
+	background-color: #e3e8ec;
+}
+
+h1{
+	font-family: 'Oswald', sans-serif;
+	padding-left: 15px;
+}
+
+span{
+	font-size: 20px;
+}
+
+h4{
+	padding-left: 15px;
+}
+
+p{
+	text-align: justify;
+}

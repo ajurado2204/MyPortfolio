@@ -1,3 +1,31 @@
-#essence{
-	padding-top: 40px;
+body{
+	background-color: #e3e8ec;
+}
+
+h1{
+	font-family: 'Oswald', sans-serif;
+}
+
+p{
+	font-size: 17px;
+}
+
+.panel.panel-default{
+	margin-top: 10%;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.panel-body{
+	background-color: #903a2b;
+	border: 1px solid black;
+	
+}
+
+.entireform{
+	margin-left: -170%;
+	margin-right: 20%;
+}
+
+.btn.btn-default{
+	margin-top: 5%;
 }
