@@ -4,16 +4,15 @@ body{
 
 .jumbotron{
 	background-image: url("../images/abstractmacro.jpg");
-	width: auto;
-	height: 300px;
 	border-bottom: 1px solid black;
+	margin-top: -20px;
 }
 
 .jumbotron h1{
 	color: black;
 	font-family: 'Courgette', cursive;
 	text-align: center;
-	padding-top: 30px;
+	
 	font-weight: bold;
 	font-size: 50px
 }
@@ -70,16 +69,6 @@ p{
 	text-align: justify;
 }
 
-
-
-
-div a{
-	float: left;
-}
-
-form{
-	float: right;
-}
 
 
 
