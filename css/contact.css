@@ -22,10 +22,12 @@ p{
 }
 
 .entireform{
-	margin-left: -170%;
-	margin-right: 20%;
+	margin-left: 5%;
+	margin-right: 10%;
+	vertical-align: center;
 }
 
 .btn.btn-default{
 	margin-top: 5%;
+	margin-left: 5%;
 }
