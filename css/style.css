@@ -29,35 +29,12 @@ body{
 	background-color: #2B8190;
 }
 
-.navbar-brand{
-	color: black !important;
-	font-family: 'Indie Flower', cursive;
-	font-size: 30px;
-	font-weight: bold;
-}
-
-.nav.navbar-nav li a {
-  color: black;
-  font-family: 'Indie Flower', cursive;
-  font-size: 17px;
-  font-weight: bold;
-}
-
 a:link{
 	color: blue;
 }
 
 a:visited {
    color: red;
-}
-
-.nav.navbar-nav li a:hover{
-	background-color: #4db6c6;
-}
-
-.nav.navbar-nav.active a{
-	background-color: #4797a3;
-
 }
 
 .headeralignment{

@@ -2,10 +2,7 @@
 <html>
 <head>
 	<title>Contact Me</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha256-sHwgyDk4CGNYom267UJX364ewnY4Bh55d53pxP5WDug= sha512-mkkeSf+MM3dyMWg3k9hcAttl7IVHe2BA1o/5xKLl4kBaP0bih7Mzz/DBy4y6cNZCHtE2tPgYBYH/KtEjOQYKxA==" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -16,15 +13,25 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<a class="navbar-brand" href="#">Want to contact me?</a>
 			</div>
-		<div>
-		<ul class="nav navbar-nav">
-			<li><a href="main.html">Home</a></li>
-			<li><a href="myprojects.html">My Projects</a></li>
-			<li class="active"><a href="contactme.html">Contact Me</a></li>
-		</ul>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+				<ul class="nav navbar-nav">
+					<li><a href="main.html">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="myprojects.html">My Projects</a></li>
+					<li class="active"><a href="contactme.html">Contact Me</a></li>
+				</ul>
+			</div>
+		</div>
 	</nav>
+
 
 	<div class="container">
 		<div class="row">
@@ -72,5 +79,9 @@
 		</div>
 	</div>
 
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </body>
 </html>
