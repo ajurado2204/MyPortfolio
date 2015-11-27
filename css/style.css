@@ -1,18 +1,56 @@
 body{
-	background-color: #F8F8F8;
+	background-color: #e3e8ec;
+}
+
+.opaque-navbar{
+	background-color: transparent;
+	background: transparent;
+	border-width: 0px;
+	transition: background-color .5s ease 0s;
+}
+
+.opaque-navbar.removed-opaque{
+	background: #bfd6de;
+	border-bottom: 1px solid black;
+	transition: background-color .5s ease 0s;
+}
+
+.nav.navbar-nav > li > a {
+	color:  black;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+#brand{
+	color:  black;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.nav.navbar-nav > li > a:hover{
+	float: none;
+	color: #002E36;
+	background-color: #d8e6eb;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+	background-color: #80AEBE !important;
 }
 
 .jumbotron{
 	background-image: url("../images/abstractmacro.jpg");
 	border-bottom: 1px solid black;
-	margin-top: -20px;
+	height: auto;
+	width: 100%;
+	min-height: 300px;
+	max-height: 600px;
 }
 
 .jumbotron h1{
 	color: black;
 	font-family: 'Courgette', cursive;
 	text-align: center;
-	
+
 	font-weight: bold;
 	font-size: 50px
 }
@@ -25,29 +63,19 @@ body{
 	font-size: 40px
 }
 
-.container-fluid{
-	background-color: #2B8190;
-}
-
 a:link{
 	color: blue;
 }
 
 a:visited {
-   color: red;
+	color: red;
 }
 
 .headeralignment{
 	padding-left: 20px;
 }
 
-p{ 
+p{
 	padding: 0px 40px 0px 40px;
 	text-align: justify;
 }
-
-
-
-
-
-
