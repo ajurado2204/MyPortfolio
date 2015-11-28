@@ -1,13 +1,48 @@
 body{
-	background-color: #e3e8ec;
+	background-color: #35404F;
+}
+
+.container{
+	margin-top: 8%;
+}
+
+#brand{
+	color:  #35404F;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.nav.navbar-nav > li > a {
+	color:  #35404F;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.nav.navbar-nav > li > a:hover{
+	float: none;
+	color: #002E36;
+	background-color: #d8e6eb;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+	background-color: #7ACCC8 !important;
+}
+
+.navbar{
+	background: #4AAAA5;
 }
 
 h1{
-	font-family: 'Oswald', sans-serif;
+	color: #E45F56;
 }
 
 p{
 	font-size: 17px;
+	color: white;
+}
+
+h4{
+	color: #E45F56;
 }
 
 .panel.panel-default{
@@ -16,7 +51,7 @@ p{
 }
 
 .panel-body{
-	background-color: #903a2b;
+	background-color: #E45F56;;
 	border: 1px solid black;
 	
 }
