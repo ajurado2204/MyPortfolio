@@ -1,5 +1,5 @@
 body{
-	background-color: #e3e8ec;
+	background-color: #35404F;
 }
 
 .opaque-navbar{
@@ -10,19 +10,19 @@ body{
 }
 
 .opaque-navbar.removed-opaque{
-	background: #bfd6de;
+	background: #4AAAA5;
 	border-bottom: 1px solid black;
 	transition: background-color .5s ease 0s;
 }
 
 .nav.navbar-nav > li > a {
-	color:  black;
+	color:  #35404F;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 19px;
 }
 
 #brand{
-	color:  black;
+	color:  #35404F;
 	font-weight: bold;
 	font-size: 20px;
 }
@@ -34,7 +34,7 @@ body{
 }
 
 .navbar-inverse .navbar-nav>.active>a{
-	background-color: #80AEBE !important;
+	background-color: #7ACCC8 !important;
 }
 
 .jumbotron{
@@ -47,16 +47,15 @@ body{
 }
 
 .jumbotron h1{
-	color: black;
+	color: #35404F;
 	font-family: 'Courgette', cursive;
 	text-align: center;
-
 	font-weight: bold;
 	font-size: 50px
 }
 
 .jumbotron h2{
-	color: black;
+	color: #35404F;
 	font-family: 'Courgette', cursive;
 	text-align: center;
 	font-weight: bold;
@@ -71,11 +70,19 @@ a:visited {
 	color: red;
 }
 
-.headeralignment{
-	padding-left: 20px;
-}
-
 p{
 	padding: 0px 40px 0px 40px;
 	text-align: justify;
+}
+
+.container{
+	color: white;
+}
+
+.container h4{
+	color: #E45F56;
+}
+
+h3{
+	color: #E45F56;
 }
