@@ -8,6 +8,7 @@ function initializer(){
 			type: "GET",
 			url: $(this).attr("href"),
 			success: function(commits){
+				$("tbody").empty();
 				for(var i = 0; i < commits.length; i++){
 					var myNewRow = displayCommits(commits[i]);
 					$("tbody").append(myNewRow);
@@ -22,7 +23,8 @@ function initializer(){
 
 function displayCommits(commits){
 
-	var commitName = $("<td>").append(commits.commit.message);
+	var htmlCommit = commits.html_url;
+	var commitName = $("<td>").append($("<a>").attr("href", htmlCommit).append(commits.commit.message));
 	var author = $("<td>").append(commits.commit.author.name);
 	var date = $("<td>").append(commits.commit.author.date);
 
