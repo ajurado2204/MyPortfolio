@@ -24,7 +24,7 @@ function initializer(){
 function displayCommits(commits){
 
 	var htmlCommit = commits.html_url;
-	var commitName = $("<td>").append($("<a>").attr("href", htmlCommit).append(commits.commit.message));
+	var commitName = $("<td>").append($("<a>").attr("href", htmlCommit).attr("target", "_blank").append(commits.commit.message));
 	var author = $("<td>").append(commits.commit.author.name);
 	var date = $("<td>").append(commits.commit.author.date);
 
