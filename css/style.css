@@ -3,7 +3,7 @@ body{
 }
 
 header, main, footer {
-  padding-left: 240px;
+  padding-left: 200px;
 }
 
 @media only screen and (max-width : 992px) {
@@ -12,66 +12,40 @@ header, main, footer {
   }
 }
 
-
-
-.opaque-navbar{
-	background-color: transparent;
-	background: transparent;
-	border-width: 0px;
-	transition: background-color .5s ease 0s;
+nav.top-nav a.page-title{
+  font-size: 250%;
+  font-family: 'Courgette', cursive;
+  padding-left: 30%;
+  font-weight: bold;
+  color: white;
 }
 
-.opaque-navbar.removed-opaque{
-	background: #4AAAA5;
-	border-bottom: 1px solid black;
-	transition: background-color .5s ease 0s;
+.top-nav{
+  background-color: #E45F56;
+  border-bottom: 1px black solid;
 }
 
-.nav.navbar-nav > li > a {
-	color:  #35404F;
-	font-weight: bold;
-	font-size: 19px;
+.side-nav{
+  background-color: #4AAAA5;
 }
 
-#brand{
-	color:  #35404F;
-	font-weight: bold;
-	font-size: 20px;
+p{
+  padding: 0px 40px 0px 40px;
+  text-align: justify;
 }
 
-.nav.navbar-nav > li > a:hover{
-	float: none;
-	color: #002E36;
-	background-color: #d8e6eb;
+#contactme{
+  padding: 0px 40px 0px 40px;
+  text-align: justify;
 }
 
-.navbar-inverse .navbar-nav>.active>a{
-	background-color: #7ACCC8 !important;
+.allinfo{
+  color: white;
+  padding: 3% 5% 5% 5%;
 }
 
-.jumbotron{
-	background-image: url("../images/abstractmacro.jpg");
-	border-bottom: 1px solid black;
-	height: auto;
-	width: 100%;
-	min-height: 300px;
-	max-height: 200px;
-}
-
-.jumbotron h1{
-	color: #35404F;
-	font-family: 'Courgette', cursive;
-	text-align: center;
-	font-weight: bold;
-	font-size: 50px
-}
-
-.jumbotron h2{
-	color: #C6D5CD;
-	font-family: 'Courgette', cursive;
-	text-align: center;
-	font-weight: bold;
-	font-size: 40px
+h5{
+  color: #E45F56;
 }
 
 a:link{
@@ -82,23 +56,15 @@ a:visited {
 	color: red;
 }
 
-p{
-	padding: 0px 40px 0px 40px;
-	text-align: justify;
+.side-nav li:hover {
+  background-color: #7ACCC8;
 }
 
-.container{
-	color: white;
+.side-nav li.active {
+  border-left: 4px solid #0880b9;
+  background-color: #a3d39c;
 }
 
-.container h4{
-	color: #E45F56;
-}
-
-h3{
-	color: #E45F56;
-}
-
-.col-md-6 p{
-	text-align: center;
+.side-nav li a{
+  font-family: 'Montserrat', sans-serif;
 }

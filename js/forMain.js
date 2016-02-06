@@ -1,8 +1,7 @@
-$(window).scroll(function() {
-  if($(this).scrollTop() > 50)
-  {
-    $('.opaque-navbar').addClass('removed-opaque');
-  } else {
-    $('.opaque-navbar').removeClass('removed-opaque');
+// Initialize collapse button
+$(".button-collapse").sideNav({
+    menuWidth: 200, // Default is 240
+    edge: 'left', // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
   }
-});
+);
