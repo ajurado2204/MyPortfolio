@@ -48,14 +48,6 @@ h5{
   color: #E45F56;
 }
 
-a:link{
-	color: blue;
-}
-
-a:visited {
-	color: red;
-}
-
 .side-nav li:hover {
   background-color: #7ACCC8;
 }
