@@ -1,9 +1,9 @@
-body{
-	background-color: #35404F;
-}
-
 header, main, footer {
   padding-left: 200px;
+}
+
+body{
+  background-color: #35404F;
 }
 
 @media only screen and (max-width : 992px) {
