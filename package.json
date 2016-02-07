@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/ajurado2204/MyPortfolio#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "node-github": "0.0.3"
   }
 }
