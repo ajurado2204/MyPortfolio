@@ -1,7 +1,7 @@
 $(document).ready(initializer);
 
 function initializer(){
-	$(".list-group").on("click","a", function(e){
+	$(".collection").on("click","a", function(e){
 		e.preventDefault();
 
 		$.ajax({
