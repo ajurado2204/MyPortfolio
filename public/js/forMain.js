@@ -5,7 +5,7 @@ $(".button-collapse").sideNav({
   }
 );
 
-$('#themodaltrigger').on('click', function(){
+$('.themodaltrigger').on('click', function(){
   $('#modal1').openModal({
     dismissible: false, // Modal can be dismissed by clicking outside of the modal
     opacity: .3, // Opacity of modal background
