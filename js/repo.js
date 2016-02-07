@@ -8,7 +8,7 @@ function initialize(){
 		success: function(repos){
 			for(var i = 0; i < repos.length; i++){
 				var listItem = addRepoToList(repos[i]);
-				$(".list-group").append(listItem);
+				$(".collection").append(listItem);
 			}
 		},
 		error: function(jqXHR, textStatus, errorThrown){
@@ -23,10 +23,10 @@ function addRepoToList(repo){
     commitsApiUrl += repo.owner.login + "/";
     commitsApiUrl += repo.name + "/commits";
 
-    var newLink = $("<a>")
+    var newA = $("<a>")
       .attr("href", commitsApiUrl)
-      .addClass("list-group-item")
+      .addClass("collection-item")
       .append(repo.full_name);
 
-    return newLink;
+    return newA;
 }

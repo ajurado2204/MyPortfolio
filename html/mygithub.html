@@ -2,70 +2,140 @@
 <html>
 
 <head>
-	<title>My Github</title>
+  <title>My Github</title>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"  media="screen,projection"/>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<link	rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
-	<link	rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="../css/projects.css">
-	<link rel="stylesheet" type="text/css" href="../css/forcommits.css">
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../css/forcommits.css">
 </head>
 
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" id="brand" href="#">My Github</a>
-		</div>
 
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-			<ul class="nav navbar-nav">
-				<li><a href="../main.html">Home <span class="sr-only">(current)</span></a></li>
-				<li><a href="myprojects.html">My Projects</a></li>
-				<li><a href="contactme.html">Contact Me</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="mygithub.html"><img src="../images/GitHub-Mark-32px.png"> Github</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
+<header>
+  <nav class="top-nav">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="mdi-navigation-menu"></i></a>
+        <a class="page-title">Github Repos!</a>
+      </div>
+    </div>
+  </nav>
 
-<div class="jumbotron">
-	
-</div>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-3">
-			<div class="list-group">
-		
-			</div>
-		</div>
-		<div class="col-md-9">
-			<table class="table table-hover">
-				<thead>
-					<th>Commits</th>
-					<th>Author</th>
-					<th>Date</th>
-				</thead>
-				<tbody>
-					
-				</tbody>
-			</table>
-		</div>
-	</div>
-</div>
+  <ul id="nav-mobile" class="side-nav fixed" styles="width: 240px;">
+    <div class="container">
+      <div class="row">
+        <div class="col s12"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <img src="../images/portfoliopic.jpg" alt="" class="circle responsive-img">
+          <h6>Alejandra</h6>
+          <h6>Jurado</h6>
+        </div>
+      </div>
+    </div>
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <li class="bold"><a href="../main.html">Home</a></li>
+    <li class="bold"><a href="html/myprojects.html">My Projects</a></li>
+    <li class="bold"><a id="themodaltrigger" href="#!">Contact Me</a></li>
+    <li class="bold active"><a href="#!"><img src="../images/GitHub-Mark-32px.png"> Github</a></li>
+  </ul>
+</header>
+
+<main>
+
+  <!--<div class="container">-->
+    <div class="row">
+      <div class="col s4">
+        <div class="collection">
+          <a class="collection-item collection-header" href="#!"><h4>Repos</h4></a>
+
+        </div>
+      </div>
+
+      <div class="col s8">
+        <table class="highlight">
+          <thead>
+            <tr>
+              <th>Commits</th>
+              <th>Author</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  <!--</div>-->
+
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12">
+          <h4>Contact Me!
+            <a href="https://www.linkedin.com/in/alejandra-jurado-65309673" target="_blank">
+              <img class="right" src="../images/webicon-linkedin.png">
+            </a>
+            <a href="https://github.com/ajurado2204" target="_blank">
+              <img class="right" src="../images/githublogo.png">
+            </a>
+          </h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <form class="col s12">
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text" length="10">
+              <label for="name">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea" length="300"></textarea>
+              <label for="textarea1">Message</label>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+    </div>
+  </div>
+
+</main>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 <script type="text/javascript" src="../js/forMain.js"></script>
 <script type="text/javascript" src="../js/repo.js"></script>
 <script type="text/javascript" src="../js/commits.js"></script>

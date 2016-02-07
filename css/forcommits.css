@@ -1,20 +1,73 @@
-th{
-	background-color: #A3D39C;
-	color: black;
+header, main, footer {
+  padding-left: 200px;
 }
 
-table{
-	background-color: #35404F;
+body{
+  background-color: #35404F;
 }
 
-a:link{
-	color: #E45F56;
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
 }
 
-a:visited{
-	color: #E45F56;
+nav.top-nav a.page-title{
+  font-size: 250%;
+  font-family: 'Courgette', cursive;
+  padding-left: 30%;
+  font-weight: bold;
+  color: white;
 }
 
-td{
-	color: #7197cc;
+.top-nav{
+  background-color: #E45F56;
+  border-bottom: 1px black solid;
+}
+
+.side-nav{
+  background-color: #4AAAA5;
+}
+
+p{
+  padding: 0px 40px 0px 40px;
+  text-align: justify;
+}
+
+#contactme{
+  padding: 0px 40px 0px 40px;
+  text-align: justify;
+}
+
+.allinfo{
+  color: white;
+  padding: 3% 5% 5% 5%;
+}
+
+h5{
+  color: #E45F56;
+}
+
+.side-nav li:hover {
+  background-color: #7ACCC8;
+}
+
+.side-nav li.active {
+  border-left: 4px solid #0880b9;
+  background-color: #a3d39c;
+}
+
+.side-nav li a{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h6{
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 40px;
+  font-family: 'Courgette', cursive;
 }
