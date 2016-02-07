@@ -36,7 +36,7 @@
 
     <li class="bold"><a href="../main.html">Home</a></li>
     <li class="bold active"><a href="#!">My Projects</a></li>
-    <li class="bold"><a href="contactme.html">Contact Me</a></li>
+    <li class="bold"><a id="themodaltrigger" href="#!">Contact Me</a></li>
     <li class="bold"><a href="mygithub.html"><img src="../images/GitHub-Mark-32px.png"> Github</a></li>
   </ul>
 </header>
@@ -65,11 +65,44 @@
       C
     </p>
   </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Contact Me!</h4>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="name" type="text" length="10">
+          <label for="name">Name</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+    </div>
+  </div>
+
 </main>
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-<script src="../js/forMain.js"></script>
+<script type="text/javascript" src="../js/forMain.js"></script>
 </body>
 </html>

@@ -29,12 +29,21 @@
 
   <ul id="nav-mobile" class="side-nav fixed" styles="width: 240px;">
     <div class="container">
-      <img src="images/portfoliopic.jpg" alt="" class="circle responsive-img">
+      <div class="row">
+        <div class="col s12"></div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <img src="images/portfoliopic.jpg" alt="" class="circle responsive-img">
+          <h6>Alejandra</h6>
+          <h6>Jurado</h6>
+        </div>
+      </div>
     </div>
 
     <li class="bold active"><a href="#!">Home</a></li>
     <li class="bold"><a href="html/myprojects.html">My Projects</a></li>
-    <li class="bold"><a href="html/contactme.html">Contact Me</a></li>
+    <li class="bold"><a id="themodaltrigger" href="#!">Contact Me</a></li>
     <li class="bold"><a href="html/mygithub.html"><img src="images/GitHub-Mark-32px.png"> Github</a></li>
   </ul>
 </header>
@@ -109,14 +118,50 @@
         </ul>
       </div>
     </div>
-
   </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Contact Me!</h4>
+      <div class="row">
+        <form class="col s12">
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text" length="10">
+              <label for="name">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+    </div>
+  </div>
+
 </main>
 
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-<script src="js/forMain.js"></script>
+<script type="text/javascript" src="js/forMain.js"></script>
 </body>
 </html>
