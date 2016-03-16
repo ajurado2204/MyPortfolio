@@ -13,6 +13,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -38,11 +39,19 @@
             <h6>Jurado</h6>
           </div>
         </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="networklinks">
+              <a href="https://www.github.com/ajurado2204" target="_blank"><img class="responsive-img" src="/images/GitHub-Mark-64px.png"></a>
+              <a href="https://www.linkedin.com/in/alejandrajurado" target="_blank"><img class="responsive-img" src="/images/webicon-linkedin.png"></a>
+              <a href="mailto:alejandra.jurado22@gmail.com" target="_top"><i class="medium material-icons">email</i></a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <li class="bold active"><a href="/">Home</a></li>
       <li class="bold"><a href="/myprojects">My Projects</a></li>
-      <li class="bold"><a class="contactmodaltrigger" href="#!">Contact Me</a></li>
       <li class="bold"><a href="/mygithub"><img src="/images/GitHub-Mark-32px.png"> Github</a></li>
     </ul>
   </header>
@@ -70,7 +79,7 @@
           <h5 class="headeralignment">Technologies</h5>
           <div>
             <p>
-              Experience with HTML5/CSS3, JavaScript, Jquery, MySQL, Bootstrap & Materialize, Responsive Design, AJAX, Firebase, JSON, Node.js, Github, Git, API/JSON, RESTful API, State Management, PHP(beginner), C++, C, Java(beginner)
+              Experience with HTML5/CSS3, JavaScript, Jquery, MySQL, Bootstrap & Materialize, Responsive Design, AJAX, Firebase, Node.js, Angular.js, Meteor, Git/Github, API/JSON, RESTful API, State Management, MySQL, PHP(beginner), C++, C, Java(beginner), Express, Lodash, Active Record, Command Line and creation of Content Management Systems (CMS)
             </p>
           </div>
         </div>
@@ -110,7 +119,7 @@
 
           <h5 class="headeralignment">Contact Information</h5>
           <ul id="contactme">
-            <li><a class="contactmodaltrigger" href="#!">Shoot me a message!</a></li>
+            <li><a href="mailto:alejandra.jurado22@gmail.com" target="_top">Shoot me a message!</a></li>
             <p>or...</p>
             <li>My Email: alejandra.jurado22@gmail.com</li>
             <li>Phone Number: (201) 205-3120</li>
@@ -118,62 +127,13 @@
         </div>
       </div>
     </div>
-
-    <!-- Modal Structure for Contact Me -->
-    <div id="modal1" class="modal modal-fixed-footer">
-      <div class="modal-content">
-
-        <div class="row">
-          <div class="col s12">
-            <h4>Contact Me!
-              <a href="https://www.linkedin.com/in/alejandra-jurado-65309673" target="_blank">
-                <img class="right" src="/images/webicon-linkedin.png">
-              </a>
-              <a href="https://github.com/ajurado2204" target="_blank">
-                <img class="right" src="/images/githublogo.png">
-              </a>
-            </h4>
-          </div>
-        </div>
-
-        <div class="row">
-          <form class="col s12">
-
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="name" type="text" length="10">
-                <label for="name">Name</label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="input-field col s12">
-                <textarea id="textarea1" class="materialize-textarea" length="300"></textarea>
-                <label for="textarea1">Message</label>
-              </div>
-            </div>
-
-          </form>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
-      </div>
-    </div>
-
   </main>
 
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<script type="text/javascript" src="/js/forSendMail.js"></script>
 <script type="text/javascript" src="/js/forMain.js"></script>
 </body>
 </html>

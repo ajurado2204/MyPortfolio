@@ -8,8 +8,6 @@ var PORT = process.env.PORT || 8080;
 
 
 app.use(bodyparser.urlencoded({extended:false}));
-
-
 app.use('/js', express.static("public/js"));
 app.use('/css', express.static("public/css"));
 app.use('/images', express.static("public/images"));
@@ -24,14 +22,10 @@ app.get('/myprojects', function(req, res){
   res.sendFile(process.cwd() + "/views/myprojects.html");
 });
 
+
 app.get('/mygithub', function(req, res){
   res.sendFile(process.cwd() + "/views/mygithub.html");
 });
-
-app.get('/dashboard', middleware, function(req,res){
-  res.sendFile(process.cwd() + "/views/dashboard.html")
-});
-
 
 
 app.listen(PORT, function(){

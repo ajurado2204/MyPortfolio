@@ -71,3 +71,15 @@ h4{
   font-size: 40px;
   font-family: 'Courgette', cursive;
 }
+
+
+.networklinks a{
+  display: inline !important;
+  padding: 0px 0px 0px 0px !important;
+  line-height: 0px !important;
+}
+
+
+i.medium {
+  font-size: 3rem;
+}

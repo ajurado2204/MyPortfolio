@@ -21,6 +21,8 @@
     "body-parser": "^1.14.2",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
-    "node-github": "0.0.3"
+    "mailto": "^0.1.2",
+    "node-github": "0.0.3",
+    "sendmail": "^0.2.1"
   }
 }
