@@ -83,3 +83,13 @@ h4{
 i.medium {
   font-size: 3rem;
 }
+
+@media screen and (max-width:600px) {
+  nav.top-nav a.page-title{
+    font-size: 175%;
+    font-family: 'Courgette', cursive;
+    padding-left: 25%;
+    font-weight: bold;
+    color: white;
+  }
+}
