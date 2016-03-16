@@ -1,8 +1,16 @@
 $(document).ready(initializer);
 
 function initializer(){
+  $('.collapsible').collapsible({
+    accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+  });
+
 	$(".collection").on("click","a", function(e){
 		e.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $('#myTable').offset().top
+    }, 1000);
 
 		$.ajax({
 			type: "GET",
