@@ -18,7 +18,7 @@ function initialize(){
 }
 
 function addRepoToList(repo){
-	console.log("hello");
+
 	var commitsApiUrl = "https://api.github.com/repos/";
     commitsApiUrl += repo.owner.login + "/";
     commitsApiUrl += repo.name + "/commits";

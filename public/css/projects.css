@@ -1,0 +1,12 @@
+ img.rps {
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.project-title{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #E45F56;
+}
