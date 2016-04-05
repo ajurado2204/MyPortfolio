@@ -109,4 +109,12 @@ i.medium {
     margin: 10px auto;
     position: relative;
   }
+
+  p{
+    padding: 0px 0px 0px 0px;
+  }
+
+  #contactme{
+    text-align: left;
+  }
 }
