@@ -8,16 +8,26 @@ var PORT = process.env.PORT || 8080;
 
 
 app.use(bodyparser.urlencoded({extended:false}));
-app.use(bodyparser.json());
-app.use(express.static(__dirname + "/public"));
+app.use('/js', express.static("public/js"));
+app.use('/css', express.static("public/css"));
+app.use('/images', express.static("public/images"));
 
-// routes ==================================================
-require('./app/routes')(app); // configure our routes
+
+app.get('/', function(req, res){
+  res.sendFile(process.cwd() + "/views/main.html");
+});
+
+
+app.get('/myprojects', function(req, res){
+  res.sendFile(process.cwd() + "/views/myprojects.html");
+});
+
+
+app.get('/mygithub', function(req, res){
+  res.sendFile(process.cwd() + "/views/mygithub.html");
+});
 
 
 app.listen(PORT, function(){
   console.log("listening on port %s", PORT);
 });
-
-
-exports = module.exports = app;
