@@ -22,6 +22,7 @@
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "mailto": "^0.1.2",
+    "morgan": "^1.7.0",
     "node-github": "0.0.3",
     "sendmail": "^0.2.1"
   }
