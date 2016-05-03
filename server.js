@@ -14,22 +14,6 @@ app.use(express.static(__dirname + "/public"));
 // routes ==================================================
 require('./app/routes')(app); // configure our routes
 
-//app.get('/', function(req, res){
-//  res.sendFile(process.cwd() + "/views/main.html");
-//});
-//
-//
-//app.get('/myprojects', function(req, res){
-//  res.sendFile(process.cwd() + "/views/myprojects.html");
-//});
-//
-//
-//app.get('/mygithub', function(req, res){
-//  res.sendFile(process.cwd() + "/views/mygithub.html");
-//});
-//
-//
-
 
 app.listen(PORT, function(){
   console.log("listening on port %s", PORT);
