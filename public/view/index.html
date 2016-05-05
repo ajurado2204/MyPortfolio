@@ -13,31 +13,210 @@
   <script src="../js/controllers/contactMeController.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link rel="stylesheet" href="../css/hexagons.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-  <h1>HELLO</h1>
+<header>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo all-links">AJ</a>
+      <a href="#" data-activates="mobile-demo" class="right button-collapse all-links"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="sass.html">About Me</a></li>
+        <li><a href="sass.html">Projects</a></li>
+        <li><a href="collapsible.html">Skills</a></li>
+        <li><a href="mobile.html">Contact Me</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="sass.html">About Me</a></li>
+        <li><a href="sass.html">Projects</a></li>
+        <li><a href="collapsible.html">Skills</a></li>
+        <li><a href="mobile.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
   <div ng-controller="mainCtrl">
-    <p>{{topics}}</p>
+    <div class="parallax-container mainImg">
+      <div class="center-align" id="mainTitle">
+        <img src="/images/myself.jpg" alt="" class="circle responsive-img hide-on-med-and-down">
+        <h1>Alejandra Jurado</h1>
+        <h4><i>Full-Stack Web Dev</i></h4>
+      </div>
+      <div class="parallax"><img src="../images/technology.jpg"></div>
+    </div>
+    <div class="section mycontent">
+      <div class="row container">
+        <h2 class="header">About Me</h2>
+        <p class="grey-text text-darken-3 lighten-3">
+          I am a full-stack web developer, driven, self-motivated, curious, and very passionate about web development. I enjoy work that challenges me to learn something new and also strive to better myself as a developer. When I'm not coding I enjoy playing Dragon Age: Inquisition which seems to be an endless game. As well as watching shows online or drawing. Also browsing the web to learn the latest web development techniques in order to provide the best quality in user experience.
+      </div>
+    </div>
   </div>
+
 
   <div ng-controller="aboutMeCtrl">
-    <p>{{topic}}</p>
+    <div class="parallax-container">
+      <div class="center-align" id="myProj">
+        <h2>Projects</h2>
+      </div>
+      <div class="parallax"><img src="../images/art-pencils.jpg"></div>
+    </div>
+    <div class="section mycontent projects">
+      <div class="row">
+
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="../images/live-catalog.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Live Catalog<i class="material-icons right">more_vert</i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Live Catalog<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="../images/one-view.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">One-View<i class="material-icons right">more_vert</i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">One-View<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="../images/RockPaperScissors.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">RPS Game<i class="material-icons right">more_vert</i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">RPS Game<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="../images/rutgersFlyer.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Rutgers Flyer<i class="material-icons right">more_vert</i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Rutgers Flyer<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
+
+
   <div ng-controller="myProjectsCtrl">
-    <p>My Projects</p>
+    <div class="parallax-container">
+      <div class="parallax"><img src="../images/notebook.jpg"></div>
+    </div>
+    <div class="section mycontent">
+      <div class="row container">
+        <h2 class="header">Skills</h2>
+
+        <ul id="hexGrid">
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="../images/html-5.png" alt="" />
+            </a>
+          </li>
+          <li class="hex two">
+            <a class="hexIn" href="#"></a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="../images/javascript.png" alt="" />
+            </a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="../images/nodejs.png" class="nodejsImg" alt="" />
+            </a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="../images/php-logo.png" class="phpImg" alt="" />
+            </a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="../images/css-3.png" alt="" />
+            </a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="../images/githublogo.png" alt="" />
+            </a>
+          </li>
+          <li class="hex two">
+            <a class="hexIn" href="#"></a>
+          </li>
+          <li class="hex">
+            <a class="hexIn" href="#">
+              <img src="../images/angular.png" alt="" />
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
   </div>
 
   <div ng-controller="mySkillsCtrl">
-    <p>Skills</p>
+    <div class="parallax-container">
+      <div class="parallax"><img src="../images/code.jpg"></div>
+    </div>
+    <div class="section mycontent">
+      <div class="row container">
+        <h2 class="header">Contact Me</h2>
+        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+      </div>
+    </div>
   </div>
 
   <div ng-controller="contactMeCtrl">
-    <p>Contact Me</p>
+
   </div>
+</main>
+
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/events.js"></script>
+<script type="text/javascript" src="../js/sticker.min.js"></script>
 </body>
 </html>
