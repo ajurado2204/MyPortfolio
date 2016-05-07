@@ -120,13 +120,47 @@
 /*}*/
 
 
+
 main {
   margin-top: -15%;
 }
 
 body {
-  background-color: #F0F0F0;
+  background-color: #ECECEA;
 }
+
+h1 {
+  color: #568D8A;
+  font-family: 'Wendy One', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h4 {
+  color: #D9853C;
+  font-family: 'Wendy One', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2 {
+  color: #D9853C;
+  font-family: 'Wendy One', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/* NAV */
+.brand-logo {
+  color: #D9853C !important;
+  font-family: 'Wendy One', sans-serif;
+  font-size: 50px !important;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.mynav a{
+  color: #D9853C !important;
+  font-weight: bold;
+}
+
 
 .mainImg{
   height: 600px !important;
@@ -195,4 +229,30 @@ nav a {
   margin-top: 27%;
   width: 70%;
   height: 50%;
+}
+
+/* CARD CONTENT */
+.card {
+  background-color: #73AFAD;
+}
+
+.card .card-content {
+  padding: 10px !important;
+}
+
+.card .card-content .card-title {
+  color: white !important;
+  font-weight: bold;
+  font-size: 20px !important;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* PROJECT SECTION */
+#mycontent{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#mycontent .row {
+  margin-bottom: 0px !important;
 }
