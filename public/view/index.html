@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../css/hexagons.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
@@ -27,18 +27,18 @@
       <a href="#!" class="brand-logo all-links">AJ</a>
       <a href="#" data-activates="mobile-demo" class="right button-collapse all-links"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down mynav">
-        <li><a href="sass.html">Home</a></li>
-        <li><a href="sass.html">About Me</a></li>
-        <li><a href="sass.html">Projects</a></li>
-        <li><a href="collapsible.html">Skills</a></li>
-        <li><a href="mobile.html">Contact Me</a></li>
+        <li><a class="button" href="#">Home</a></li>
+        <li><a class="button" href="#aboutMe">About Me</a></li>
+        <li><a class="button" href="#projects">Projects</a></li>
+        <li><a class="button" href="#myskills">Skills</a></li>
+        <li><a class="button" href="#contactme">Contact Me</a></li>
       </ul>
       <ul class="side-nav mynav" id="mobile-demo">
-        <li><a href="sass.html">Home</a></li>
-        <li><a href="sass.html">About Me</a></li>
-        <li><a href="sass.html">Projects</a></li>
-        <li><a href="collapsible.html">Skills</a></li>
-        <li><a href="mobile.html">Contact Me</a></li>
+        <li><a class="button" href="#">Home</a></li>
+        <li><a class="button" href="#aboutMe">About Me</a></li>
+        <li><a class="button" href="#projects">Projects</a></li>
+        <li><a class="button" href="#myskills">Skills</a></li>
+        <li><a class="button" href="#contactme">Contact Me</a></li>
       </ul>
     </div>
   </nav>
@@ -50,7 +50,7 @@
       <div class="center-align" id="mainTitle">
         <img src="/images/myself.jpg" alt="" class="circle responsive-img hide-on-med-and-down">
         <h1>Alejandra Jurado</h1>
-        <h4><i>Full-Stack Web Dev</i></h4>
+        <h4><i id="aboutMe">Full-Stack Web Dev</i></h4>
       </div>
       <div class="parallax"><img src="../images/technology.jpg"></div>
     </div>
@@ -58,16 +58,22 @@
       <div class="row container">
         <h2 class="header">About Me</h2>
         <p class="grey-text text-darken-3 lighten-3">
-          I am a full-stack web developer, driven, self-motivated, curious, and very passionate about web development. I enjoy work that challenges me to learn something new and also strive to better myself as a developer. When I'm not coding I enjoy playing Dragon Age: Inquisition which seems to be an endless game. As well as watching shows online or drawing. Also browsing the web to learn the latest web development techniques in order to provide the best quality in user experience.
+          I am a full-stack web developer, driven, self-motivated, curious, and very
+          passionate about web development. I enjoy work that challenges me to learn
+          something new and also strive to better myself as a developer. When I'm not
+          coding I enjoy playing Dragon Age: Inquisition which seems to be an endless
+          game. As well as watching shows online or drawing. Also browsing the web to
+          learn the latest web development techniques in order to provide the best quality
+          in user experience.
       </div>
     </div>
   </div>
 
 
   <div ng-controller="aboutMeCtrl">
-    <div class="parallax-container">
+    <div class="parallax-container" id="projects">
       <div class="center-align" id="myProj">
-        <h2>Projects</h2>
+        <h3>Projects</h3>
       </div>
       <div class="parallax"><img src="../images/art-pencils.jpg"></div>
     </div>
@@ -84,7 +90,11 @@
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Live Catalog<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>A web application that displays all New York Times Best Sellers books, along with
+                links to Ebay.com and Amazon.com which allows users to buy their favorite books. HTML, CSS,
+                Bootstrap, JavaScript, AJAX, JSON
+              </p>
+              <a href="https://github.com/ajurado2204/8-0project" target="_blank">Github Link</a>
             </div>
           </div>
         </div>
@@ -99,7 +109,13 @@
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">One-View<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>
+                A web application that allows users to display content from three different social networks.
+                Displays Slacks incoming messages, Gmail display all unread emails, and for Twitter it
+                displays the 5 most recent twitter feeds from your home timeline in one single page. HTML, CSS, Materialize,
+                JavaScript, AngularJS, NodeJS
+              </p>
+              <a href="https://github.com/ajurado2204/one-messaging" target="_blank">Github Link</a>
             </div>
           </div>
         </div>
@@ -114,7 +130,8 @@
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Rock Paper Scissors<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>Simple Rock Paper Scissors Game.</p>
+              <a href="https://github.com/ajurado2204/RockPaperScissor" target="_blank">Github Link</a>
             </div>
           </div>
         </div>
@@ -130,7 +147,11 @@
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Rutgers Flyer<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>
+                A web application that allows users to add locations specifically around Rutgers. It allows logged in users to add locations
+                and insert reviews and ratings for a location. HTML, CSS, Materialize, JavaScript, NodeJS
+              </p>
+              <a href="https://github.com/ajurado2204/rutgersflyer" target="_blank">Github Link</a>
             </div>
           </div>
         </div>
@@ -145,9 +166,9 @@
     <div class="parallax-container">
       <div class="parallax"><img src="../images/notebook.jpg"></div>
     </div>
-    <div class="section mycontent">
+    <div class="section mycontent" id="myskills">
       <div class="row container">
-        <h2 class="header">Skills</h2>
+        <h2 class="header">Skills<small><a href="https://drive.google.com/open?id=0BzP9eaRR3kRiSXBtMmFNQUJDZlE" target="_blank">...click to view more</a></small></h2>
 
         <ul id="hexGrid">
           <li class="hex">
@@ -201,17 +222,45 @@
     <div class="parallax-container">
       <div class="parallax"><img src="../images/code.jpg"></div>
     </div>
-    <div class="section mycontent">
+    <div class="section mycontent" id="contactme">
       <div class="row container">
-        <h2 class="header">Contact Me</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        <h3 class="header">Contact Me</h3>
+        <p class="grey-text text-darken-3 lighten-3">
+        <div class="row">
+          <div class="col m4">
+            <div class="circle circle-color">
+              <a href="mailto:alejandra.jurado22@gmail.com" target="_top">
+                <i class="medium material-icons contact-icons" id="email">email</i>
+                <h5>Email</h5>
+              </a>
+            </div>
+          </div>
+
+          <div class="col m4">
+            <div class="circle circle-color">
+              <a href="https://www.linkedin.com/in/alejandrajurado" target="_blank">
+                <img src="../images/webicon-linkedin.png" class="linkedin">
+                <h5>LinkedIn</h5>
+              </a>
+            </div>
+          </div>
+
+          <div class="col m4">
+            <div class="circle github-circle">
+              <a href="https://www.github.com/ajurado2204" target="_blank">
+                <img src="../images/GitHub-Mark.png">
+                <h5>Github</h5>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        </p>
       </div>
     </div>
   </div>
 
-  <div ng-controller="contactMeCtrl">
-
-  </div>
+  <div ng-controller="contactMeCtrl"></div>
 </main>
 
 

@@ -142,9 +142,20 @@ h4 {
 }
 
 h2 {
+  color: #73AFAD;
+  font-family: 'Wendy One', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h3 {
   color: #D9853C;
   font-family: 'Wendy One', sans-serif;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+h2 small {
+  font-size: 18px !important;
 }
 
 
@@ -175,12 +186,20 @@ img {
   height: auto;
 }
 
+
+#sidenav-overlay {
+  z-index: 0 !important;
+}
+
+
 /***********************************************************************
 *  OPAQUE NAVBAR SECTION
 ***********************************************************************/
 nav{
   background-color: rgba(0,0,0,0) !important;
   transition: background-color .5s ease 0s !important;
+  position: relative;
+  z-index: 1;
 }
 
 nav .opaque {
@@ -255,4 +274,42 @@ nav a {
 
 #mycontent .row {
   margin-bottom: 0px !important;
+}
+
+
+/* CONTACT ME SECTION */
+.circle {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+
+a #email {
+  margin-top: 20%;
+  margin-left: 20%;
+  color: #000;
+}
+
+.linkedin {
+  height: 55%;
+  width: 55%;
+  margin-top: 22%;
+  margin-left: 21%;
+}
+
+.circle-color {
+  background: #D9853C;
+}
+
+.circle-color h5 {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.github-circle h5 {
+  margin-top: -2%;
+  text-align: center;
 }
