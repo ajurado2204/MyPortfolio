@@ -18,6 +18,7 @@
   <link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../css/hexagons.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link href="../css/animate.css" rel="stylesheet">
 </head>
 <body>
 
@@ -28,14 +29,14 @@
       <a href="#" data-activates="mobile-demo" class="right button-collapse all-links"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down mynav">
         <li><a class="button slideDown" href="#">Home</a></li>
-        <li><a class="button slideDown" href="#aboutMe">About Me</a></li>
+        <li><a class="button slideDown" href="#about-me">About Me</a></li>
         <li><a class="button slideDown" href="#projects">Projects</a></li>
         <li><a class="button slideDown" href="#myskills">Skills</a></li>
         <li><a class="button slideDown" href="#contactme">Contact Me</a></li>
       </ul>
       <ul class="side-nav mynav" id="mobile-demo">
         <li><a class="button slideDown" href="#">Home</a></li>
-        <li><a class="button slideDown" href="#aboutMe">About Me</a></li>
+        <li><a class="button slideDown" href="#about-me">About Me</a></li>
         <li><a class="button slideDown" href="#projects">Projects</a></li>
         <li><a class="button slideDown" href="#myskills">Skills</a></li>
         <li><a class="button slideDown" href="#contactme">Contact Me</a></li>
@@ -48,15 +49,18 @@
   <div ng-controller="mainCtrl">
     <div class="parallax-container mainImg">
       <div class="center-align" id="mainTitle">
-        <img src="/images/myself.jpg" alt="" class="circle responsive-img hide-on-med-and-down">
-        <h1>Alejandra Jurado</h1>
-        <h4><i id="aboutMe">Full-Stack Web Dev</i></h4>
+        <img src="/images/myself.jpg" alt="" class="circle responsive-img hide-on-med-and-down ">
+        <h1 class="demo" data-in-effect="fadeInDownBig">Alejandra Jurado</h1>
+        <h4 class="demoTwo" data-in-effect="fadeInUpBig"><i id="aboutMe">Full-Stack Web Dev</i></h4>
       </div>
-      <div class="parallax"><img src="../images/technology.jpg"></div>
+      <div class="parallax">
+        <img src="../images/technology.jpg">
+      </div>
     </div>
     <div class="section mycontent">
       <div class="row container">
-        <h2 class="header">About Me</h2>
+
+        <h2 class="header" id="about-me">About Me</h2>
         <p class="grey-text text-darken-3 lighten-3">
           I am a full-stack web developer, driven, self-motivated, curious, and very
           passionate about web development. I enjoy work that challenges me to learn
@@ -70,7 +74,7 @@
   </div>
 
 
-  <div ng-controller="aboutMeCtrl">
+  <div ng-controller="aboutMeCtrl" id="aboutMeSection">
     <div class="parallax-container" id="projects">
       <div class="center-align" id="myProj">
         <h3>Projects</h3>
@@ -162,7 +166,7 @@
 
 
 
-  <div ng-controller="myProjectsCtrl">
+  <div ng-controller="myProjectsCtrl" id="myProjectSection">
     <div class="parallax-container">
       <div class="parallax"><img src="../images/notebook.jpg"></div>
     </div>
@@ -172,45 +176,45 @@
 
         <ul id="hexGrid">
           <li class="hex">
-            <a class="hexIn" href="#">
+            <div class="hexIn" href="#">
               <img src="../images/html-5.png" alt="" class="hvr-pulse-shrink"/>
-            </a>
+            </div>
           </li>
           <li class="hex two">
-            <a class="hexIn" href="#"></a>
+            <div class="hexIn" href="#"></div>
           </li>
           <li class="hex">
-            <a class="hexIn" href="#">
+            <div class="hexIn" href="#">
               <img src="../images/javascript.png" alt="" class="hvr-pulse-shrink"/>
-            </a>
+            </div>
           </li>
           <li class="hex">
-            <a class="hexIn" href="#">
+            <div class="hexIn" href="#">
               <img src="../images/nodejs.png" class="nodejsImg hvr-pulse-shrink" alt=""/>
-            </a>
+            </div>
           </li>
           <li class="hex">
-            <a class="hexIn" href="#">
+            <div class="hexIn" href="#">
               <img src="../images/php-logo.png" class="phpImg hvr-pulse-shrink" alt=""/>
-            </a>
+            </div>
           </li>
           <li class="hex">
-            <a class="hexIn" href="#">
+            <div class="hexIn" href="#">
               <img src="../images/css-3.png" alt="" class="hvr-pulse-shrink"/>
-            </a>
+            </div>
           </li>
           <li class="hex">
-            <a class="hexIn" href="#">
+            <div class="hexIn" href="#">
               <img src="../images/githublogo.png" alt="" class="hvr-pulse-shrink"/>
-            </a>
+            </div>
           </li>
           <li class="hex two">
-            <a class="hexIn" href="#"></a>
+            <div class="hexIn" href="#"></div>
           </li>
           <li class="hex">
-            <a class="hexIn" href="#">
+            <div class="hexIn" href="#">
               <img src="../images/angular.png" alt="" class="hvr-pulse-shrink"/>
-            </a>
+            </div>
           </li>
         </ul>
 
@@ -218,7 +222,7 @@
     </div>
   </div>
 
-  <div ng-controller="mySkillsCtrl">
+  <div ng-controller="mySkillsCtrl" id="mySkillsSection">
     <div class="parallax-container">
       <div class="parallax"><img src="../images/code.jpg"></div>
     </div>
@@ -227,7 +231,7 @@
         <h3 class="header">Contact Me</h3>
         <p class="grey-text text-darken-3 lighten-3">
         <div class="row">
-          <div class="col m4">
+          <div class="col s12 m4">
             <div class="circle circle-color hvr-pulse-shrink">
               <a href="mailto:alejandra.jurado22@gmail.com" target="_top">
                 <i class="medium material-icons contact-icons" id="email">email</i>
@@ -236,7 +240,7 @@
             </div>
           </div>
 
-          <div class="col m4">
+          <div class="col s12 m4">
             <div class="circle circle-color hvr-pulse-shrink">
               <a href="https://www.linkedin.com/in/alejandrajurado" target="_blank">
                 <img src="../images/webicon-linkedin.png" class="linkedin">
@@ -245,7 +249,7 @@
             </div>
           </div>
 
-          <div class="col m4">
+          <div class="col s12 m4">
             <div class="circle github-circle hvr-pulse-shrink">
               <a href="https://www.github.com/ajurado2204" target="_blank">
                 <img src="../images/GitHub-Mark.png">
@@ -263,10 +267,19 @@
   <div ng-controller="contactMeCtrl"></div>
 </main>
 
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container center-align">
+      © 2014 Alejandra Jurado
+    </div>
+  </div>
+</footer>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 <script type="text/javascript" src="../js/events.js"></script>
 <script type="text/javascript" src="../js/sticker.min.js"></script>
+<script src="../js/jquery.lettering.js"></script>
+<script src="../js/jquery.textillate.js"></script>
 </body>
 </html>
