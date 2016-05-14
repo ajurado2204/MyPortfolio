@@ -6,6 +6,7 @@ body {
   background-color: #ECECEA;
 }
 
+
 h1 {
   color: #568D8A;
   font-family: 'Wendy One', sans-serif;
@@ -51,7 +52,7 @@ h2 small {
 
 
 .mainImg{
-  height: 600px !important;
+  height: 775px !important;
 }
 
 .parallax-container{
@@ -62,6 +63,7 @@ img {
   width: 100%;
   height: auto;
 }
+
 
 
 #sidenav-overlay {
@@ -271,10 +273,16 @@ nav a {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.mycontent {
+  background-color: #ECECEA;
+}
+
+
 /* PROJECT SECTION */
 #mycontent{
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  background-color: #ECECEA;
 }
 
 #mycontent .row {
@@ -406,4 +414,16 @@ a #email {
   animation-direction: alternate;
 }
 
+.page-footer {
+  background-color: transparent !important;
+}
 
+.footer-copyright {
+  background-color: #568D8A !important;
+}
+
+
+.section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
