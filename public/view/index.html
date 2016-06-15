@@ -22,214 +22,250 @@
 </head>
 <body>
 
-<header>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo all-links slideRight">AJ</a>
-      <a href="#" data-activates="mobile-demo" class="right button-collapse all-links"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down mynav">
-        <li><a class="button slideDown" href="#">Home</a></li>
-        <li><a class="button slideDown" href="#about-me">About Me</a></li>
-        <li><a class="button slideDown" href="#projects">Projects</a></li>
-        <li><a class="button slideDown" href="#myskills">Skills</a></li>
-        <li><a class="button slideDown" href="#contactme">Contact Me</a></li>
-      </ul>
-      <ul class="side-nav mynav" id="mobile-demo">
-        <li><a class="button slideDown" href="#">Home</a></li>
-        <li><a class="button slideDown" href="#about-me">About Me</a></li>
-        <li><a class="button slideDown" href="#projects">Projects</a></li>
-        <li><a class="button slideDown" href="#myskills">Skills</a></li>
-        <li><a class="button slideDown" href="#contactme">Contact Me</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<main>
-
-  <div ng-controller="mainCtrl">
-    <div class="parallax-container mainImg">
-      <div class="center-align" id="mainTitle">
-        <img src="{{myImage}}" alt="" class="circle responsive-img hide-on-med-and-down ">
-        <h1 class="demo" data-in-effect="fadeInDownBig">{{myName}}</h1>
-        <h4 class="demoTwo" data-in-effect="fadeInUpBig"><i id="aboutMe">{{myExperience}}</i></h4>
-      </div>
-      <div class="parallax">
-        <img src="{{parallaxBackground}}">
-      </div>
-    </div>
-  </div>
-
-
-  <div ng-controller="aboutMeCtrl" id="aboutMeSection">
-    <div class="section mycontent">
-      <div class="row container">
-        <h2 class="header" id="about-me">{{topic}}</h2>
-        <p class="grey-text text-darken-3 lighten-3">{{description}}</p>
-      </div>
-    </div>
-    <div class="parallax-container" id="projects">
-      <div class="parallax">
-        <img src="{{parallaxBackground}}">
-      </div>
-    </div>
-  </div>
-
-
-  <div ng-controller="myProjectsCtrl" id="myProjectSection">
-    <div class="section" id="mycontent">
-      <div class="row">
-        <div class="center-align">
-          <h3>{{topic}}</h3>
-        </div>
-        <div class="col s12 m6 l3">
-          <div class="card z-depth-4 hvr-float-shadow">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator responsive-img" src="{{liveCatalog}}">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">{{liveCatalogTitle}}<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">{{liveCatalogTitle}}<i class="material-icons right">close</i></span>
-              <p>{{liveCatalogDescription}}</p>
-              <a href="{{liveCatalogLink}}" target="_blank">{{githubLink}}</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="card z-depth-4 hvr-float-shadow">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator responsive-img" src="{{oneView}}">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">{{oneViewTitle}}<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">{{oneViewTitle}}<i class="material-icons right">close</i></span>
-              <p>{{oneViewDescription}}</p>
-              <a href="{{oneViewLink}}" target="_blank">{{githubLink}}</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="card z-depth-4 hvr-float-shadow">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator responsive-img" src="{{rpsGame}}">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">{{rpsGameTitle}}<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">{{rpsGameTitle}}<i class="material-icons right">close</i></span>
-              <p>{{rpsGameDescription}}</p>
-              <a href="{{rpsGameLink}}" target="_blank">{{githubLink}}</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col s12 m6 l3">
-          <div class="card z-depth-4 hvr-float-shadow">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator responsive-img" src="{{rutgersFlyer}}">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">{{rutgersFlyerTitle}}<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">{{rutgersFlyerTitle}}<i class="material-icons right">close</i></span>
-              <p>{{rutgersFlyerDescription}}</p>
-              <a href="{{rutgersFlyerLink}}" target="_blank">{{githubLink}}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="parallax-container">
-      <div class="parallax"><img src="{{parallaxBackground}}"></div>
-    </div>
-  </div>
-
-
-  <div ng-controller="mySkillsCtrl" id="mySkillsSection">
-
-    <div class="section mycontent" id="myskills">
-      <div class="row container">
-        <h2 class="header">{{topic}}<small><a href="{{myResumeLink}}" target="_blank">...click to views more</a></small></h2>
-
-        <ul id="hexGrid">
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="{{htmlImage}}" alt="" class="hvr-pulse-shrink"/>
-            </div>
-          </li>
-          <li class="hex two">
-            <div class="hexIn" href="#"></div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="{{javascriptImage}}" alt="" class="hvr-pulse-shrink"/>
-            </div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="{{nodeImage}}" class="nodejsImg hvr-pulse-shrink" alt=""/>
-            </div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="{{phpImage}}" class="phpImg hvr-pulse-shrink" alt=""/>
-            </div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="{{cssImage}}" alt="" class="hvr-pulse-shrink"/>
-            </div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="{{gitImage}}" alt="" class="hvr-pulse-shrink"/>
-            </div>
-          </li>
-          <li class="hex two">
-            <div class="hexIn" href="#"></div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="{{angularImage}}" alt="" class="hvr-pulse-shrink"/>
-            </div>
-          </li>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo all-links slideRight">AJ</a>
+        <a href="#" data-activates="mobile-demo" class="right button-collapse all-links"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down mynav">
+          <li><a class="button slideDown" href="#">Home</a></li>
+          <li><a class="button slideDown" href="#about-me">About Me</a></li>
+          <li><a class="button slideDown" href="#projects">Projects</a></li>
+          <li><a class="button slideDown" href="#myskills">Skills</a></li>
+          <li><a class="button slideDown" href="#contactme">Contact Me</a></li>
         </ul>
+        <ul class="side-nav mynav" id="mobile-demo">
+          <li><a class="button slideDown" href="#">Home</a></li>
+          <li><a class="button slideDown" href="#about-me">About Me</a></li>
+          <li><a class="button slideDown" href="#projects">Projects</a></li>
+          <li><a class="button slideDown" href="#myskills">Skills</a></li>
+          <li><a class="button slideDown" href="#contactme">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+
+    <div ng-controller="mainCtrl">
+      <div class="parallax-container mainImg">
+        <div class="center-align" id="mainTitle">
+          <img src="{{myImage}}" alt="" class="circle responsive-img hide-on-med-and-down ">
+          <h1 class="demo" data-in-effect="fadeInDownBig">{{myName}}</h1>
+          <h4 class="demoTwo" data-in-effect="fadeInUpBig"><i id="aboutMe">{{myExperience}}</i></h4>
+        </div>
+        <div class="parallax">
+          <img src="{{parallaxBackground}}">
+        </div>
       </div>
     </div>
 
-    <div class="parallax-container">
-      <div class="parallax"><img src="{{parallaxBackground}}"></div>
+
+    <div ng-controller="aboutMeCtrl" id="aboutMeSection">
+      <div class="section mycontent">
+        <div class="row container">
+          <h2 class="header" id="about-me">{{topic}}</h2>
+          <p class="grey-text text-darken-3 lighten-3">{{description}}</p>
+        </div>
+      </div>
+      <div class="parallax-container" id="projects">
+        <div class="parallax">
+          <img src="{{parallaxBackground}}">
+        </div>
+      </div>
     </div>
-  </div>
 
 
+    <div ng-controller="myProjectsCtrl" id="myProjectSection">
+      <div class="section" id="mycontent">
+        <div class="row">
+          <div class="center-align">
+            <h3>{{topic}}</h3>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card z-depth-4 hvr-float-shadow">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="{{liveCatalog}}">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{liveCatalogTitle}}<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{liveCatalogTitle}}<i class="material-icons right">close</i></span>
+                <p>{{liveCatalogDescription}}</p>
+                <a href="{{liveCatalogLink}}" target="_blank">{{githubLink}}</a>
+              </div>
+            </div>
+          </div>
 
-</main>
+          <div class="col s12 m6 l3">
+            <div class="card z-depth-4 hvr-float-shadow">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="{{oneView}}">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{oneViewTitle}}<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{oneViewTitle}}<i class="material-icons right">close</i></span>
+                <p>{{oneViewDescription}}</p>
+                <a href="{{oneViewLink}}" target="_blank">{{githubLink}}</a>
+              </div>
+            </div>
+          </div>
 
-<footer class="page-footer">
-  <div class="footer-copyright">
-    <div class="container center-align">
-      © 2014 Alejandra Jurado
+          <div class="col s12 m6 l3">
+            <div class="card z-depth-4 hvr-float-shadow">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="{{rpsGame}}">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{rpsGameTitle}}<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{rpsGameTitle}}<i class="material-icons right">close</i></span>
+                <p>{{rpsGameDescription}}</p>
+                <a href="{{rpsGameLink}}" target="_blank">{{githubLink}}</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col s12 m6 l3">
+            <div class="card z-depth-4 hvr-float-shadow">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="{{rutgersFlyer}}">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{rutgersFlyerTitle}}<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{rutgersFlyerTitle}}<i class="material-icons right">close</i></span>
+                <p>{{rutgersFlyerDescription}}</p>
+                <a href="{{rutgersFlyerLink}}" target="_blank">{{githubLink}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="{{parallaxBackground}}"></div>
+      </div>
     </div>
-  </div>
-</footer>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-<script type="text/javascript" src="../js/events.js"></script>
-<script type="text/javascript" src="../js/sticker.min.js"></script>
-<script src="../js/jquery.lettering.js"></script>
-<script src="../js/jquery.textillate.js"></script>
+
+    <div ng-controller="mySkillsCtrl" id="mySkillsSection">
+
+      <div class="section mycontent" id="myskills">
+        <div class="row container">
+          <h2 class="header">{{topic}}<small><a href="{{myResumeLink}}" target="_blank">...click to views more</a></small></h2>
+
+          <ul id="hexGrid">
+            <li class="hex">
+              <div class="hexIn" href="#">
+                <img src="{{htmlImage}}" alt="" class="hvr-pulse-shrink"/>
+              </div>
+            </li>
+            <li class="hex two">
+              <div class="hexIn" href="#"></div>
+            </li>
+            <li class="hex">
+              <div class="hexIn" href="#">
+                <img src="{{javascriptImage}}" alt="" class="hvr-pulse-shrink"/>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn" href="#">
+                <img src="{{nodeImage}}" class="nodejsImg hvr-pulse-shrink" alt=""/>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn" href="#">
+                <img src="{{phpImage}}" class="phpImg hvr-pulse-shrink" alt=""/>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn" href="#">
+                <img src="{{cssImage}}" alt="" class="hvr-pulse-shrink"/>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn" href="#">
+                <img src="{{gitImage}}" alt="" class="hvr-pulse-shrink"/>
+              </div>
+            </li>
+            <li class="hex two">
+              <div class="hexIn" href="#"></div>
+            </li>
+            <li class="hex">
+              <div class="hexIn" href="#">
+                <img src="{{angularImage}}" alt="" class="hvr-pulse-shrink"/>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="{{parallaxBackground}}"></div>
+      </div>
+    </div>
+
+
+    <div ng-controller="contactMeCtrl">
+      <div class="section mycontent" id="contactme">
+        <div class="row container">
+          <h3 class="header">{{topic}}</h3>
+          <p class="grey-text text-darken-3 lighten-3">
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="circle circle-color hvr-pulse-shrink">
+                <a href="{{myEmail}}" target="_top">
+                  <i class="medium material-icons contact-icons" id="email">email</i>
+                  <h5>Email</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="circle circle-color hvr-pulse-shrink">
+                <a href="{{myLinkedInLink}}" target="_blank">
+                  <img src="{{myLinkedInImage}}" class="linkedin">
+                  <h5>LinkedIn</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="circle github-circle hvr-pulse-shrink">
+                <a href="{{myGithubLink}}" target="_blank">
+                  <img src="{{myGithubImage}}">
+                  <h5>Github</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container center-align">
+        © 2014 Alejandra Jurado
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/events.js"></script>
+  <script type="text/javascript" src="../js/sticker.min.js"></script>
+  <script src="../js/jquery.lettering.js"></script>
+  <script src="../js/jquery.textillate.js"></script>
 </body>
 </html>
