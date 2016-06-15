@@ -155,52 +155,66 @@
   </div>
 
 
-
-
-
   <div ng-controller="mySkillsCtrl" id="mySkillsSection">
-    <div class="parallax-container">
-      <div class="parallax"><img src="../images/code.jpg"></div>
-    </div>
-    <div class="section mycontent" id="contactme">
+
+    <div class="section mycontent" id="myskills">
       <div class="row container">
-        <h3 class="header">Contact Me</h3>
-        <p class="grey-text text-darken-3 lighten-3">
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="circle circle-color hvr-pulse-shrink">
-              <a href="mailto:alejandra.jurado22@gmail.com" target="_top">
-                <i class="medium material-icons contact-icons" id="email">email</i>
-                <h5>Email</h5>
-              </a>
-            </div>
-          </div>
+        <h2 class="header">{{topic}}<small><a href="{{myResumeLink}}" target="_blank">...click to views more</a></small></h2>
 
-          <div class="col s12 m4">
-            <div class="circle circle-color hvr-pulse-shrink">
-              <a href="https://www.linkedin.com/in/alejandrajurado" target="_blank">
-                <img src="../images/webicon-linkedin.png" class="linkedin">
-                <h5>LinkedIn</h5>
-              </a>
+        <ul id="hexGrid">
+          <li class="hex">
+            <div class="hexIn" href="#">
+              <img src="{{htmlImage}}" alt="" class="hvr-pulse-shrink"/>
             </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="circle github-circle hvr-pulse-shrink">
-              <a href="https://www.github.com/ajurado2204" target="_blank">
-                <img src="../images/GitHub-Mark.png">
-                <h5>Github</h5>
-              </a>
+          </li>
+          <li class="hex two">
+            <div class="hexIn" href="#"></div>
+          </li>
+          <li class="hex">
+            <div class="hexIn" href="#">
+              <img src="{{javascriptImage}}" alt="" class="hvr-pulse-shrink"/>
             </div>
-          </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn" href="#">
+              <img src="{{nodeImage}}" class="nodejsImg hvr-pulse-shrink" alt=""/>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn" href="#">
+              <img src="{{phpImage}}" class="phpImg hvr-pulse-shrink" alt=""/>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn" href="#">
+              <img src="{{cssImage}}" alt="" class="hvr-pulse-shrink"/>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn" href="#">
+              <img src="{{gitImage}}" alt="" class="hvr-pulse-shrink"/>
+            </div>
+          </li>
+          <li class="hex two">
+            <div class="hexIn" href="#"></div>
+          </li>
+          <li class="hex">
+            <div class="hexIn" href="#">
+              <img src="{{angularImage}}" alt="" class="hvr-pulse-shrink"/>
+            </div>
+          </li>
+        </ul>
 
-        </div>
-        </p>
       </div>
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="{{parallaxBackground}}"></div>
     </div>
   </div>
 
-  <div ng-controller="contactMeCtrl"></div>
+
+
 </main>
 
 <footer class="page-footer">
