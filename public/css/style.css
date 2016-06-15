@@ -3,7 +3,7 @@ main {
 }
 
 body {
-  background-color: #ECECEA;
+  background-color: white;
 }
 
 
@@ -236,9 +236,7 @@ nav a {
   margin-top: 20%;
 }
 
-#myProj {
-  margin-top: 10%;
-}
+
 
 .devicon-javascript-plain {
   font-size: 500%;
@@ -274,7 +272,7 @@ nav a {
 }
 
 .mycontent {
-  background-color: #ECECEA;
+  background-color: white;
 }
 
 
@@ -282,7 +280,7 @@ nav a {
 #mycontent{
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  background-color: #ECECEA;
+  background-color: white;
 }
 
 #mycontent .row {
