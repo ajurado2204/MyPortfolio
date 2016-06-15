@@ -46,29 +46,18 @@
 </header>
 
 <main>
+
   <div ng-controller="mainCtrl">
     <div class="parallax-container mainImg">
-      <div class="center-align" id="mainTitle">
-        <img src="/images/myself.jpg" alt="" class="circle responsive-img hide-on-med-and-down ">
-        <h1 class="demo" data-in-effect="fadeInDownBig">Alejandra Jurado</h1>
-        <h4 class="demoTwo" data-in-effect="fadeInUpBig"><i id="aboutMe">Full-Stack Web Dev</i></h4>
-      </div>
-      <div class="parallax">
-        <img src="../images/technology.jpg">
-      </div>
-    </div>
-    <div class="section mycontent">
-      <div class="row container">
 
-        <h2 class="header" id="about-me">About Me</h2>
-        <p class="grey-text text-darken-3 lighten-3">
-          I am a full-stack web developer, driven, self-motivated, curious, and very
-          passionate about web development. I enjoy work that challenges me to learn
-          something new and also strive to better myself as a developer. When I'm not
-          coding I enjoy playing Dragon Age: Inquisition which seems to be an endless
-          game. As well as watching shows online or drawing. Also browsing the web to
-          learn the latest web development techniques in order to provide the best quality
-          in user experience.
+      <div class="center-align" id="mainTitle">
+        <img src="{{myImage}}" alt="" class="circle responsive-img hide-on-med-and-down ">
+        <h1 class="demo" data-in-effect="fadeInDownBig">{{myName}}</h1>
+        <h4 class="demoTwo" data-in-effect="fadeInUpBig"><i id="aboutMe">{{myExperience}}</i></h4>
+      </div>
+
+      <div class="parallax">
+        <img src="{{parallaxBackground}}">
       </div>
     </div>
   </div>
