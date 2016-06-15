@@ -49,13 +49,11 @@
 
   <div ng-controller="mainCtrl">
     <div class="parallax-container mainImg">
-
       <div class="center-align" id="mainTitle">
         <img src="{{myImage}}" alt="" class="circle responsive-img hide-on-med-and-down ">
         <h1 class="demo" data-in-effect="fadeInDownBig">{{myName}}</h1>
         <h4 class="demoTwo" data-in-effect="fadeInUpBig"><i id="aboutMe">{{myExperience}}</i></h4>
       </div>
-
       <div class="parallax">
         <img src="{{parallaxBackground}}">
       </div>
@@ -64,152 +62,101 @@
 
 
   <div ng-controller="aboutMeCtrl" id="aboutMeSection">
-    <div class="parallax-container" id="projects">
-      <div class="center-align" id="myProj">
-        <h3>Projects</h3>
+    <div class="section mycontent">
+      <div class="row container">
+        <h2 class="header" id="about-me">{{topic}}</h2>
+        <p class="grey-text text-darken-3 lighten-3">{{description}}</p>
       </div>
-      <div class="parallax"><img src="../images/art-pencils.jpg"></div>
     </div>
-    <div class="section" id="mycontent">
-      <div class="row">
-
-        <div class="col s12 m6 l3">
-          <div class="card z-depth-4 hvr-float-shadow">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator responsive-img" src="../images/live-catalog.png">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Live Catalog<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Live Catalog<i class="material-icons right">close</i></span>
-              <p>A web application that displays all New York Times Best Sellers books, along with
-                links to Ebay.com and Amazon.com which allows users to buy their favorite books. HTML, CSS,
-                Bootstrap, JavaScript, AJAX, JSON
-              </p>
-              <a href="https://github.com/ajurado2204/8-0project" target="_blank">Github Link</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="card z-depth-4 hvr-float-shadow">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator responsive-img" src="../images/one-view.png">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">One-View<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">One-View<i class="material-icons right">close</i></span>
-              <p>
-                A web application that allows users to display content from three different social networks.
-                Displays Slacks incoming messages, Gmail display all unread emails, and for Twitter it
-                displays the 5 most recent twitter feeds from your home timeline in one single page. HTML, CSS, Materialize,
-                JavaScript, AngularJS, NodeJS
-              </p>
-              <a href="https://github.com/ajurado2204/one-messaging" target="_blank">Github Link</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="card z-depth-4 hvr-float-shadow">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator responsive-img" src="../images/RockPaperScissors.png">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Rock Paper Scissors<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Rock Paper Scissors<i class="material-icons right">close</i></span>
-              <p>Simple Rock Paper Scissors Game.</p>
-              <a href="https://github.com/ajurado2204/RockPaperScissor" target="_blank">Github Link</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col s12 m6 l3">
-          <div class="card z-depth-4 hvr-float-shadow">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator responsive-img" src="../images/rutgersFlyer.png">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Rutgers Flyer<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Rutgers Flyer<i class="material-icons right">close</i></span>
-              <p>
-                A web application that allows users to add locations specifically around Rutgers. It allows logged in users to add locations
-                and insert reviews and ratings for a location. HTML, CSS, Materialize, JavaScript, NodeJS
-              </p>
-              <a href="https://github.com/ajurado2204/rutgersflyer" target="_blank">Github Link</a>
-            </div>
-          </div>
-        </div>
-
+    <div class="parallax-container" id="projects">
+      <div class="parallax">
+        <img src="{{parallaxBackground}}">
       </div>
     </div>
   </div>
-
 
 
   <div ng-controller="myProjectsCtrl" id="myProjectSection">
-    <div class="parallax-container">
-      <div class="parallax"><img src="../images/notebook.jpg"></div>
-    </div>
-    <div class="section mycontent" id="myskills">
-      <div class="row container">
-        <h2 class="header">Skills<small><a href="https://drive.google.com/open?id=0BzP9eaRR3kRiSXBtMmFNQUJDZlE" target="_blank">...click to view more</a></small></h2>
+    <div class="section" id="mycontent">
+      <div class="row">
+        <div class="center-align">
+          <h3>{{topic}}</h3>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-4 hvr-float-shadow">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="{{liveCatalog}}">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">{{liveCatalogTitle}}<i class="material-icons right">more_vert</i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">{{liveCatalogTitle}}<i class="material-icons right">close</i></span>
+              <p>{{liveCatalogDescription}}</p>
+              <a href="{{liveCatalogLink}}" target="_blank">{{githubLink}}</a>
+            </div>
+          </div>
+        </div>
 
-        <ul id="hexGrid">
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="../images/html-5.png" alt="" class="hvr-pulse-shrink"/>
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-4 hvr-float-shadow">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="{{oneView}}">
             </div>
-          </li>
-          <li class="hex two">
-            <div class="hexIn" href="#"></div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="../images/javascript.png" alt="" class="hvr-pulse-shrink"/>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">{{oneViewTitle}}<i class="material-icons right">more_vert</i></span>
             </div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="../images/nodejs.png" class="nodejsImg hvr-pulse-shrink" alt=""/>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">{{oneViewTitle}}<i class="material-icons right">close</i></span>
+              <p>{{oneViewDescription}}</p>
+              <a href="{{oneViewLink}}" target="_blank">{{githubLink}}</a>
             </div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="../images/php-logo.png" class="phpImg hvr-pulse-shrink" alt=""/>
-            </div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="../images/css-3.png" alt="" class="hvr-pulse-shrink"/>
-            </div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="../images/githublogo.png" alt="" class="hvr-pulse-shrink"/>
-            </div>
-          </li>
-          <li class="hex two">
-            <div class="hexIn" href="#"></div>
-          </li>
-          <li class="hex">
-            <div class="hexIn" href="#">
-              <img src="../images/angular.png" alt="" class="hvr-pulse-shrink"/>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
 
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-4 hvr-float-shadow">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="{{rpsGame}}">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">{{rpsGameTitle}}<i class="material-icons right">more_vert</i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">{{rpsGameTitle}}<i class="material-icons right">close</i></span>
+              <p>{{rpsGameDescription}}</p>
+              <a href="{{rpsGameLink}}" target="_blank">{{githubLink}}</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col s12 m6 l3">
+          <div class="card z-depth-4 hvr-float-shadow">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="{{rutgersFlyer}}">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">{{rutgersFlyerTitle}}<i class="material-icons right">more_vert</i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">{{rutgersFlyerTitle}}<i class="material-icons right">close</i></span>
+              <p>{{rutgersFlyerDescription}}</p>
+              <a href="{{rutgersFlyerLink}}" target="_blank">{{githubLink}}</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="{{parallaxBackground}}"></div>
+    </div>
   </div>
+
+
+
+
 
   <div ng-controller="mySkillsCtrl" id="mySkillsSection">
     <div class="parallax-container">
