@@ -8,7 +8,7 @@ app.controller('mySkillsCtrl', ['$http', '$scope', function($http, $scope){
   var msC = $scope;
 
   msC.topic = 'Skills';
-  msC.myResumeLink = 'https://drive.google.com/open?id=0BzP9eaRR3kRiSXBtMmFNQUJDZlE';
+  msC.myResumeLink = 'https://drive.google.com/file/d/0BzP9eaRR3kRiMGNXMnp2WU9qX2M/view?usp=sharing';
   msC.htmlImage = '../images/html-5.png';
   msC.javascriptImage = '../images/javascript.png';
   msC.nodeImage = '../images/nodejs.png';
